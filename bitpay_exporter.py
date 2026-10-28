@@ -3,11 +3,11 @@
 
 Flow: open Bit -> home "See all" -> scroll the activity list, opening each new row's detail screen for
 its reference number -> back to the top -> "Contact/Number" sheet, scroll it and save every contact ->
-filter the activity by contacts to learn which phone each counterparty is -> close Bit.
+map counterparties to phones (exact name match, verified by filtering the activity per contact) -> close Bit.
 
 Everything is parsed from `uiautomator dump` XML. Runs are incremental: the activity pass stops after
---stop-after consecutive already-known transactions, and the filter pass only checks contacts that were
-never checked (plus, while some counterparties are still unmapped, the most similar unmatched contacts).
+--stop-after consecutive already-known transactions, and the filter pass only checks contacts with
+unconfirmed name matches (--full-sweep: every contact never checked). An interrupted run is continued.
 """
 import argparse
 import json
