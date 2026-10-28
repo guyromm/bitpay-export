@@ -1,0 +1,8 @@
+contacts.TABLE.sql
+TABLE.contacts.COMMENT.sql
+transactions.TABLE.sql
+TABLE.transactions.COMMENT.sql
+contacts.contacts_pkey.CONSTRAINT.sql
+transactions.transactions_pkey.CONSTRAINT.sql
+transactions_counterparty_phone_idx.INDEX.sql
+transactions_tx_at_idx.INDEX.sql

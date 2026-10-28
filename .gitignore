@@ -1,0 +1,6 @@
+.board/
+.env
+__pycache__/
+.state.json
+run*.log
+CLAUDE.local.md
